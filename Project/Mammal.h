@@ -7,14 +7,13 @@ class Mammal :
 	public Animal {
 
 public:
-	Mammal();
 	Mammal(const char*, AnimalEatingHabits, FoodTypes, unsigned int, AnimalHabitat, const char*);
-	Mammal(const Mammal&);
-	Mammal& operator=(const Mammal&);
 	~Mammal();
 	
 public:
 	virtual void print() override;
+	virtual Animal* clone() override;
+
 };
 
 #endif // !__MAMMAL_HEADER__
