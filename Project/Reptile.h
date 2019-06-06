@@ -7,14 +7,12 @@ class Reptile :
 	public Animal {
 
 public:
-	Reptile();
 	Reptile(const char*, AnimalEatingHabits, FoodTypes, unsigned int, AnimalHabitat, const char*);
-	Reptile(const Reptile&);
-	Reptile& operator=(const Reptile&);
 	~Reptile();
 
 public:
 	virtual void print() override;
+	virtual Animal* clone() override;
 };
 
 #endif // !__REPTILE_HEADER__
