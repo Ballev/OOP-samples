@@ -1,22 +1,9 @@
 #include "Mammal.h"
 
 
-Mammal::Mammal() : Animal()
-{}
-
 Mammal::Mammal(const char * _name, AnimalEatingHabits _habits, FoodTypes _food, unsigned int _quantity, AnimalHabitat _habitat, const char * _sound)
 	: Animal(_name, MAMMAL, _habits, _food, _quantity, _habitat, _sound)
 {}
-
-Mammal::Mammal(const Mammal & other) : Animal(other)
-{}
-
-Mammal & Mammal::operator=(const Mammal & other) {
-
-	Animal::operator=(other);
-
-	return *this;
-}
 
 Mammal::~Mammal()
 {}
@@ -28,4 +15,7 @@ void Mammal::print() {
 		"The animal lives in " << habitatToString() << " and produces " << getSound() << " sound.\n";
 }
 
-
+Animal* Mammal::clone(){
+	
+	return new Mammal(*this);
+}
