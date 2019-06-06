@@ -10,8 +10,6 @@ class Forest
 
 public:
 	Forest(const char*, const char*, bool);
-	Forest(const Forest&);
-	Forest& operator=(const Forest&);
 	~Forest();
 
 	virtual void print();
@@ -22,8 +20,6 @@ class Savanna
 
 public:
 	Savanna(const char*, const char*, bool);
-	Savanna(const Savanna&);
-	Savanna& operator=(const Savanna&);
 	~Savanna();
 
 	virtual void print();
@@ -34,8 +30,6 @@ class Jungle
 
 public:
 	Jungle(const char*, const char*, bool);
-	Jungle(const Jungle&);
-	Jungle& operator=(const Jungle&);
 	~Jungle();
 
 	virtual void print();
@@ -46,8 +40,6 @@ class ArcticZone
 
 public:
 	ArcticZone(const char*, const char*, bool);
-	ArcticZone(const ArcticZone&);
-	ArcticZone& operator=(const ArcticZone&);
 	~ArcticZone();
 
 	virtual void print();
@@ -58,8 +50,6 @@ class Aquarium
 
 public:
 	Aquarium(const char*, const char*, bool);
-	Aquarium(const Aquarium&);
-	Aquarium& operator=(const Aquarium&);
 	~Aquarium();
 
 	virtual void print();
@@ -70,8 +60,6 @@ class Terrarium
 
 public:
 	Terrarium(const char*, const char*, bool);
-	Terrarium(const Terrarium&);
-	Terrarium& operator=(const Terrarium&);
 	~Terrarium();
 
 	virtual void print();
