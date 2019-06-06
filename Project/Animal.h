@@ -25,6 +25,7 @@ public:
 
 public:
 	virtual void print() = 0;
+	virtual Animal* clone() = 0;
 
 protected:
 	const char* eatingHabitsToString() const;
