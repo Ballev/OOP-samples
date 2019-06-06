@@ -185,7 +185,7 @@ void Cage::copyFrom(const Cage & other) {
 
 	for (size_t i = 0; i < other.getCurSize(); ++i) {
 
-		animals[i] = other.animals[i];
+		animals[i] = other.animals[i]->clone();
 	}
 }
 
