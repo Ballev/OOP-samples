@@ -7,14 +7,12 @@ class Bird :
 	public Animal {
 
 public:
-	Bird();
 	Bird(const char*, AnimalEatingHabits, FoodTypes, unsigned int, AnimalHabitat, const char*);
-	Bird(const Bird&);
-	Bird& operator=(const Bird&);
 	~Bird();
 
 public:
 	virtual void print() override;
+	virtual Animal* clone() override;
 };
 
 #endif // !__BIRD_HEADER__
